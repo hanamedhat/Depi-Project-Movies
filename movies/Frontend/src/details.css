@@ -1,0 +1,72 @@
+/* Main container for movie details */
+.detalis {
+    background-color: #141414; /* Dark Netflix-style background */
+    color: #fff; /* White text */
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7); /* Depth effect */
+    text-align: center;
+}
+
+/* Title (h1) inherits the parent font and color but is customized */
+.detalis h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Secondary header (h2) - row index */
+.detalis h2 {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+    color: #b3b3b3; /* Less important, light grey */
+}
+
+/* Poster styling inherited within the container */
+.detalis img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6); /* Poster shadow */
+}
+
+/* Paragraph styling for overview and details */
+.detalis p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+/* Last paragraph for more spacing */
+.detalis p:last-child {
+    margin-bottom: 20px;
+}
+
+/* Button styling - consistent with Netflix red */
+.detalis button {
+    background-color: #e50914;
+    color: #fff;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+/* Button hover effect */
+.detalis button:hover {
+    background-color: #f40612;
+}
+
+/* Success or informational message */
+.detalis p.message {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    color: #4caf50; /* Green for success messages */
+}

@@ -1,0 +1,81 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.bodyForm {
+  background-color: #141414; /* Netflix dark background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: #fff;
+}
+
+.forms {
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.forms h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.forms input {
+  width: 90%;
+  padding: 14px;
+  margin: 10px 0;
+  background-color: #333;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 16px;
+}
+
+.forms input::placeholder {
+  color: #b3b3b3;
+}
+
+.forms button {
+  width: 100%;
+  padding: 14px;
+  background-color: #e50914; 
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.forms button:hover {
+  background-color: #f6121d;
+}
+
+.forms input:focus {
+  outline: none;
+  border: 1px solid #e50914;
+}
+
+@media (max-width: 600px) {
+  .forms {
+      padding: 20px;
+  }
+
+  .forms h2 {
+      font-size: 20px;
+  }
+
+  .forms input, button {
+      padding: 12px;
+  }
+}

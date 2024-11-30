@@ -1,0 +1,83 @@
+div > h1 {
+    text-align: center;
+    color: #fff; 
+}
+
+div > div#posterContainer {
+    display: flex;
+    overflow-x: auto; 
+    padding: 20px 0;
+    background-color: #141414; 
+}
+
+
+div > div#posterContainer::-webkit-scrollbar {
+    display: none; 
+}
+
+div > div#posterContainer > div {
+    flex: 0 0 auto; 
+    margin: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+div > div#posterContainer > div:hover {
+    transform: scale(1.1); /* Zoom on hover */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.7); /* Shadow effect on hover */
+}
+
+/* Poster image styling */
+div > div#posterContainer > div > img {
+    width: 200px;
+    border-radius: 5px; /* Rounded edges on images */
+}
+
+/* Movie title styling */
+div > div#posterContainer > div > h3 {
+    color: #fff;
+    text-align: center;
+    margin: 5px 0;
+    width: 200px;
+}
+
+/* Button styles inherited */
+div > div#posterContainer > div > button {
+    background-color: #e50914; /* Netflix red */
+    border: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+}
+
+div > div#posterContainer > div > button:hover {
+    background-color: #f40612; /* Darker red on hover */
+}
+
+div > div#posterContainer > div > a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+div > div#posterContainer > div > a:hover {
+    text-decoration: underline; /* Link hover effect */
+}
+
+/* Load More button outside the poster container */
+div > button {
+    background-color: #e50914;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+div > button:hover {
+    background-color: #f40612;
+}
